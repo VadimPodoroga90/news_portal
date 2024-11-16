@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(212, 147, 34, 0.303)
+}
+
+header {
+    position: sticky;
+    top: -225px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../image/baner.jpg);
+    background-size: cover;
+    -webkit-box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: rgb(240, 248, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    text-shadow: 10px 10px 5px rgb(0, 0, 0, 0.6);
+}
+
+/* Другой вариант стилизации "main" получилось то же самое,
+только лента новостей слитно,
+разделить не получилось  */
+
+/* .news {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(191, 180, 180, 0.6);
+    margin: 20px 400px 100px;
+    box-shadow: 7px 7px 7px 15px rgb(0, 0, 0, 0.6);
+} */
+
+
+.news article:nth-child(even) {
+    background-color: rgb(138, 43, 226, 0.3)
+}
+
+article {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(96, 201, 70, 0.3);
+    -webkit-box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+}
+
+article h2 {
+    display: inline-block;
+    color: rgba(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sticker-new::after {
+    content: "NEW";
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 0px 10px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-left: 10px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.article-meta {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+
+article a {
+    text-decoration: none;
+    color: rgb(63, 127, 188);
+}
+
+.article-meta a:hover {
+    color: deepskyblue;
+    border-bottom: 1px solid deepskyblue;
+}
+
+article img {
+    width: 100%;
+    max-width: 800px;
+    -webkit-transition-duration: 0.8s;
+         -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+}
+
+article img:hover {
+    -webkit-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    -webkit-box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 25px rgb(0, 0, 0, 0.5);
+}
+
+.img-news5 {
+    max-height: 640px;
+    max-width: 480px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.links {
+    margin-bottom: 50px;
+    padding-left: 100px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #636b6f;
+    text-transform: uppercase;
+    font-size: larger;
+    margin-right: 100px;
+}
+
+.links a:hover {
+    border-bottom: 2px solid #636b6f;
+}
+
+.copyright {
+    color: rgb(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
